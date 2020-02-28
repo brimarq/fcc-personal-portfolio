@@ -1,0 +1,27 @@
+
+header#welcome-section.vh-100.d-flex.flex-column
+  nav#navbar.navbar.sticky-top.justify-content-between.navbar-expand-sm.navbar-light.bg-light
+    .navbar-brand 
+      a.nav-link(href='#' ) Navbar brand
+    ul.navbar-nav
+      li.nav-item: a.nav-link(href='#proj1' ) Project 1
+      li.nav-item: a.nav-link(href='#proj2' ) Project 2
+
+  .jumbotron.jumbotron-fluid.flex-grow-1.mb-0
+    .container
+      h1 Welcome section h1 text
+      p Welcome section height = 100vh, portfolio should have at least one media query.
+
+section#projects
+  .container
+    .project-tile#proj1
+      p project tile 1
+    .project-tile#proj2
+      p project tile 2
+    div
+      a(href='#' target='_blank' ref='noopener noreferrer') Link to a project
+    div 
+      a#profile-link(href='#' target='_blank' ref='noopener noreferrer') Link to my GH or FCC profile.
+    
+//- button#custom_fcc_foldout_toggler.btn.text-nowrap !{svgPwrSymbol} TEST
+button#custom_fcc_foldout_toggler.btn.btn-dark #[i.fas.fa-power-off] TEST
