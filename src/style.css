@@ -18,11 +18,20 @@ html {
 }
 
 body {
-  color: $color-body-text;
-  font-family: $font-family-body;
+  /* color: $color-body-text; */
+  /* font-family: $font-family-body; */
   font-size: 1em;
   font-weight: 400;
   line-height: $rlh;
+}
+
+a.project-tile {
+
+}
+
+p.icon-samples {
+  text-align: center;
+  font-size: 3em;
 }
 
 button#custom_fcc_foldout_toggler {

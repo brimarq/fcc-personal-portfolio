@@ -4,15 +4,15 @@ mixin embeddedPen(title, slug)
   script(async src="https://static.codepen.io/assets/embed/ei.js")
 
 mixin project-card 
-  a(href='#' target='_blank' ref='noopener noreferrer')
+  a.project-tile(href='#' target='_blank' ref='noopener noreferrer')
     .card
       .card-body
         h5.card-title Card Title
         p.card-text Card text
 
 
-header#welcome-section.vh-100.d-flex.flex-column
-  nav#navbar.navbar.sticky-top.justify-content-between.navbar-expand-sm.navbar-light.bg-light
+section#welcome-section.vh-100.d-flex.flex-column
+  nav#navbar.navbar.sticky-top.justify-content-between.navbar-expand-sm.navbar-dark.bg-primary
     .navbar-brand 
       a.nav-link(href='#' ) Navbar brand
     ul.navbar-nav
@@ -20,7 +20,7 @@ header#welcome-section.vh-100.d-flex.flex-column
       li.nav-item: a.nav-link(href='#projects' ) Work
       li.nav-item: a.nav-link(href='#contact' ) Contact
 
-  .jumbotron.jumbotron-fluid.flex-grow-1.mb-0
+  .jumbotron.jumbotron-fluid.bg-dark.flex-grow-1.mb-0
     .container
       h1 Welcome section h1 text
       p Welcome section height = 100vh, portfolio should have at least one media query.
@@ -40,6 +40,14 @@ section#projects
 
 section#contact
   a#profile-link(href='#' target='_blank' ref='noopener noreferrer') Link to my GH or FCC profile.
+  p.icon-samples
+    i.fab.fa-twitter
+    i.fab.fa-twitter-square
+    i.fab.fa-github
+    i.fab.fa-github-square
+    i.fas.fa-at
+    i.fas.fa-envelope-square
+
 
 footer(style="height:50px;")
    
