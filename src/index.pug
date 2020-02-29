@@ -84,7 +84,15 @@ section#projects
                 //- p.card-text Card text
 
 section#contact
-  a#profile-link(href='#' target='_blank' ref='noopener noreferrer') Link to my GH or FCC profile.
+  .container
+    h2 Contact
+    p You can find me on:
+    ul
+      li: a#profile-link.profile-link(href='#' target='_blank' ref='noopener noreferrer') #[i.fab.fa-free-code-camp] freeCodeCamp 
+      li: a.profile-link(href='#' target='_blank' ref='noopener noreferrer') #[i.fab.fa-github] GitHub  
+    
+
+  //- a#profile-link(href='#' target='_blank' ref='noopener noreferrer') Link to my GH or FCC profile.
   p.icon-samples
     i.fab.fa-twitter
     i.fab.fa-twitter-square
@@ -92,6 +100,7 @@ section#contact
     i.fab.fa-github-square
     i.fas.fa-at
     i.fas.fa-envelope-square
+    i.fab.fa-free-code-camp
 
 
 footer(style="height:50px;")
