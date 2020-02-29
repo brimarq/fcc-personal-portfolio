@@ -1,3 +1,37 @@
+-
+  const projects = [
+    {
+      title: 'Drum Machine',
+      img: '../assets/drum-machine.jpg',
+      link: 'https://codepen.io/brimarq/full/LBOOab'
+    },
+    {
+      title: 'JS Calculator',
+      img: '../assets/js-calculator.jpg',
+      link: 'https://codepen.io/brimarq/full/ejXgNG'
+    },
+    {
+      title: 'Pomodoro Clock',
+      img: '../assets/pomodoro-clock.jpg',
+      link: 'https://codepen.io/brimarq/full/aadZRR'
+    },
+    {
+      title: 'Tribute Page',
+      img: '../assets/tribute-page.jpg',
+      link: 'https://codepen.io/brimarq/full/wvaopqR'
+    },
+    {
+      title: 'Technical Documentation',
+      img: '../assets/technical-documentation.jpg',
+      link: 'https://codepen.io/brimarq/full/gNaxGR'
+    },
+    {
+      title: 'Product Landing Page',
+      img: '../assets/product-landing-page.jpg',
+      link: 'https://codepen.io/brimarq/full/JjdKoJv'
+    }
+  ];
+
 mixin embeddedPen(title, slug) 
   p(class="codepen" data-height="265" data-theme-id="light" data-preview='true' data-default-tab="result" data-user="brimarq" data-slug-hash=slug style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title=title)
   //-   span See the Pen #[a(href="https://codepen.io/brimarq/pen/#{slug}") #{title}] by Brian Marquis (#[a(href="https://codepen.io/brimarq")] @brimarq) on #[a(href="https://codepen.io") CodePen]
@@ -5,7 +39,10 @@ mixin embeddedPen(title, slug)
 
 mixin project-card 
   a.project-tile(href='#' target='_blank' ref='noopener noreferrer')
+
     .card
+      //- img.card-img-top(src="https://picsum.photos/782/563")
+      img.card-img-top(src="../assets/drum-machine.png")
       .card-body
         h5.card-title Card Title
         p.card-text Card text
@@ -24,20 +61,25 @@ section#welcome-section.vh-100.d-flex.flex-column
     .container.h-100.d-flex.flex-column
      .heading.my-auto.mx-auto
         h1 Brian Marquis
-        p web developer
+        p.text-success web developer
 
 section#projects
   .container
     .row.row-cols-1.row-cols-sm-3
-      .col 
-        //- +embeddedPen('fCC Pomodoro Clock', 'aadZRR')
-        +project-card
-      .col
-        //- +embeddedPen('fCC JS Calculator', 'ejXgNG')
-        +project-card
-      .col
-        //- +embeddedPen('fCC DrumMachine"', 'LBOOab')
-        +project-card
+      //- .col 
+      //-   +project-card
+      //- .col
+      //-   +project-card
+      //- .col
+      //-   +project-card
+      each project in projects 
+        .col
+          a.project-tile(href=project.link target='_blank' ref='noopener noreferrer')
+            .card
+              img.card-img-top(src=project.img)
+              .card-body
+                h5.card-title #{project.title}
+                //- p.card-text Card text
 
 section#contact
   a#profile-link(href='#' target='_blank' ref='noopener noreferrer') Link to my GH or FCC profile.
