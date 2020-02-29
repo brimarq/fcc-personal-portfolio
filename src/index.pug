@@ -1,3 +1,4 @@
+- const imgdir = "https://raw.githubusercontent.com/brimarq/fcc-personal-portfolio/master/assets/";
 -
   const projects = [
     {
@@ -65,7 +66,8 @@ section#welcome-section.vh-100.d-flex.flex-column
 
 section#projects
   .container
-    .row.row-cols-1.row-cols-sm-3
+    h2 My Projects
+    .row.row-cols-1.row-cols-sm-2.row-cols-md-3
       //- .col 
       //-   +project-card
       //- .col
@@ -73,9 +75,9 @@ section#projects
       //- .col
       //-   +project-card
       each project in projects 
-        .col
+        .col.mb-4
           a.project-tile(href=project.link target='_blank' ref='noopener noreferrer')
-            .card
+            .card.text-center
               img.card-img-top(src=project.img)
               .card-body
                 h5.card-title #{project.title}
