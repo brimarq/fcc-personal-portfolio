@@ -87,20 +87,16 @@ section#contact
   .container
     h2 Contact
     p You can find me on:
-    ul
-      li: a#profile-link.profile-link(href='#' target='_blank' ref='noopener noreferrer') #[i.fab.fa-free-code-camp] freeCodeCamp 
-      li: a.profile-link(href='#' target='_blank' ref='noopener noreferrer') #[i.fab.fa-github] GitHub  
+    ul.social-links.nav.justify-content-center
+      li.nav-item: a#profile-link.nav-link(href='https://www.freecodecamp.org/brimarq' target='_blank' ref='noopener noreferrer')
+        i.icon-social.fab.fa-free-code-camp(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
+      li.nav-item: a#profile-link.nav-link(href='https://github.com/brimarq' target='_blank' ref='noopener noreferrer')
+        i.icon-social.fab.fa-github
+      li.nav-item: a#profile-link.nav-link(href='https://codepen.io/brimarq/' target='_blank' ref='noopener noreferrer')
+        i.icon-social.fab.fa-codepen(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
+      li.nav-item: a#profile-link.nav-link(href='mailto:rbmarquis.dev@gmail.com?subject=CodePen%20Profile%20Page%20Pen%20Response')
+        i.icon-social.fas.fa-at(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
     
-
-  //- a#profile-link(href='#' target='_blank' ref='noopener noreferrer') Link to my GH or FCC profile.
-  p.icon-samples
-    i.fab.fa-twitter
-    i.fab.fa-twitter-square
-    i.fab.fa-github
-    i.fab.fa-github-square
-    i.fas.fa-at
-    i.fas.fa-envelope-square
-    i.fab.fa-free-code-camp
 
 
 footer(style="height:50px;")

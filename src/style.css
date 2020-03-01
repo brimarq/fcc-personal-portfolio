@@ -29,6 +29,22 @@ a.project-tile {
 
 }
 
+.card {
+  transition: transform .2s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.social-links {
+  
+}
+
+.icon-social {
+  font-size: 4em;
+}
+
 p.icon-samples {
   text-align: center;
   font-size: 3em;
