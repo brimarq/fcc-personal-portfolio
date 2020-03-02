@@ -58,13 +58,13 @@ section#welcome-section.vh-100.d-flex.flex-column
       li.nav-item: a.nav-link(href='#projects' ) Work
       li.nav-item: a.nav-link(href='#contact' ) Contact
 
-  .jumbotron.jumbotron-fluid.bg-dark.flex-grow-1.mb-0
+  .jumbotron.jumbotron-fluid.bg-dark.flex-grow-1.mb-0.bg-transparent
     .container.h-100.d-flex.flex-column
      .heading.my-auto.mx-auto
         h1 Brian Marquis
         p.text-success web developer
 
-section#projects
+section#projects.bg-secondary
   .container
     h2 My Projects
     .row.row-cols-1.row-cols-sm-2.row-cols-md-3
@@ -76,12 +76,13 @@ section#projects
       //-   +project-card
       each project in projects 
         .col.mb-4
-          a.project-tile(href=project.link target='_blank' ref='noopener noreferrer')
-            .card.text-center
-              img.card-img-top(src=project.img)
-              .card-body
-                h5.card-title #{project.title}
-                //- p.card-text Card text
+          //- a.project-tile.text-white(href=project.link target='_blank' ref='noopener noreferrer')
+          .card.project-tile.text-center.bg-primary
+            img.card-img-top(src=project.img)
+            .card-body
+              h5.card-title #{project.title}
+              //- p.card-text Card text
+              a.card-link(href=project.link target='_blank' ref='noopener noreferrer') View on CodePen
 
 section#contact
   .container
