@@ -48,15 +48,26 @@ mixin project-card
         h5.card-title Card Title
         p.card-text Card text
 
+nav#navbar.navbar.fixed-top.navbar-expand-sm.navbar-dark.bg-primary
+  .container
+    a.navbar-brand(href='#' ) Brian Marquis
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#nav-main')
+      span.navbar-toggler-icon
+    #nav-main.collapse.navbar-collapse.justify-content-end
+      ul.navbar-nav
+        - const collapseNavMain = 'document.querySelector("#nav-main").classList.remove("show")';
+        li.nav-item: a.nav-link(href='#welcome-section' onclick=collapseNavMain) About
+        li.nav-item: a.nav-link(href='#projects' onclick=collapseNavMain) Work
+        li.nav-item: a.nav-link(href='#contact' onclick=collapseNavMain) Contact
 
 section#welcome-section.vh-100.d-flex.flex-column
-  nav#navbar.navbar.sticky-top.justify-content-between.navbar-expand-sm.navbar-dark.bg-primary
-    .navbar-brand 
-      a.nav-link(href='#' ) Navbar brand
-    ul.navbar-nav
-      li.nav-item: a.nav-link(href='#welcome-section' ) About
-      li.nav-item: a.nav-link(href='#projects' ) Work
-      li.nav-item: a.nav-link(href='#contact' ) Contact
+  //- nav#navbar.navbar.sticky-top.justify-content-between.navbar-expand-sm.navbar-dark.bg-primary
+  //-   .navbar-brand 
+  //-     a.nav-link(href='#' ) Navbar brand
+  //-   ul.navbar-nav
+  //-     li.nav-item: a.nav-link(href='#welcome-section' ) About
+  //-     li.nav-item: a.nav-link(href='#projects' ) Work
+  //-     li.nav-item: a.nav-link(href='#contact' ) Contact
 
   .jumbotron.jumbotron-fluid.bg-dark.flex-grow-1.mb-0.bg-transparent
     .container.h-100.d-flex.flex-column
