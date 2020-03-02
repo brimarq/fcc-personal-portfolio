@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
+  document.body.setAttribute('data-spy', 'scroll');
 
   useCustomFccToggler();
 

@@ -20,6 +20,7 @@ html {
 body {
   /* color: $color-body-text; */
   /* font-family: $font-family-body; */
+  position: relative;
   font-size: 1em;
   font-weight: 400;
   line-height: $rlh;
