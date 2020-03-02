@@ -32,20 +32,34 @@ a.project-tile {
 }
 
 .card {
-  transition: transform .2s;
+  transition: transform 0.15s ease-in-out;
 
   &:hover {
     transform: scale(1.05);
   }
 }
 
-.social-links {
+.social-links a {
   
+
+  & .icon-social {
+    font-size: 5em;
+    border-radius: 50%;
+    padding: 0.1rem;
+    /* background: radial-gradient(closest-side, white 86%, var(--white) 91%); */
+    background: hsl(0, 0%, 100%);
+    /* border: 1px solid red; */
+    /* background-size: 90% 90%; */
+    transition: transform 0.15s ease-in-out;
+    
+  }
+  &:hover .icon-social {
+    background: hsl(0, 0%, 80%);
+    transform: scale(1.1);
+  }
 }
 
-.icon-social {
-  font-size: 4em;
-}
+
 
 p.icon-samples {
   text-align: center;

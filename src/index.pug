@@ -88,26 +88,34 @@ section#projects.bg-secondary
       each project in projects 
         .col.mb-4
           //- a.project-tile.text-white(href=project.link target='_blank' ref='noopener noreferrer')
-          .card.h-100.project-tile.text-center.bg-primary
+          .card.h-100.project-tile.text-center
             img.card-img-top(src=project.img)
             .card-body
               h5.card-title #{project.title}
               //- p.card-text Card text
-              a.btn.btn-success(href=project.link target='_blank' ref='noopener noreferrer') View on CodePen
+              a.btn.btn-info(href=project.link target='_blank' ref='noopener noreferrer') View on CodePen
 
 section#contact
   .container
     h2 Contact
     p You can find me on:
     ul.social-links.nav.justify-content-center
-      li.nav-item: a#profile-link.nav-link(href='https://www.freecodecamp.org/brimarq' target='_blank' ref='noopener noreferrer')
-        i.icon-social.fab.fa-free-code-camp(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
-      li.nav-item: a#profile-link.nav-link(href='https://github.com/brimarq' target='_blank' ref='noopener noreferrer')
-        i.icon-social.fab.fa-github
-      li.nav-item: a#profile-link.nav-link(href='https://codepen.io/brimarq/' target='_blank' ref='noopener noreferrer')
-        i.icon-social.fab.fa-codepen(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
-      li.nav-item: a#profile-link.nav-link(href='mailto:rbmarquis.dev@gmail.com?subject=CodePen%20Profile%20Page%20Pen%20Response')
-        i.icon-social.fas.fa-at(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
+      li.nav-item.d-flex.flex-column.align-items-center
+        a#profile-link.nav-link.text-primary(href='https://www.freecodecamp.org/brimarq' target='_blank' ref='noopener noreferrer')
+          i.icon-social.fab.fa-free-code-camp(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
+        | freeCodeCamp
+      li.nav-item.d-flex.flex-column.align-items-center
+        a.nav-link.text-primary(href='https://github.com/brimarq' target='_blank' ref='noopener noreferrer')
+          i.icon-social.fab.fa-github
+        | GitHub
+      li.nav-item.d-flex.flex-column.align-items-center
+        a.nav-link.text-primary(href='https://codepen.io/brimarq/' target='_blank' ref='noopener noreferrer')
+          i.icon-social.fab.fa-codepen(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
+        | CodePen
+      li.nav-item.d-flex.flex-column.align-items-center
+        a.nav-link.text-primary(href='mailto:rbmarquis.dev@gmail.com?subject=CodePen%20Profile%20Page%20Pen%20Response')
+          i.icon-social.fas.fa-at(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
+        | Email
     
 
 
