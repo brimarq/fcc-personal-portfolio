@@ -51,7 +51,7 @@ mixin project-card
 nav#navbar.navbar.fixed-top.navbar-expand-sm.navbar-dark.bg-primary
   .container
     a.navbar-brand(href='#' ) Brian Marquis
-    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#nav-main')
+    button.navbar-toggler.border-0(type='button' data-toggle='collapse' data-target='#nav-main')
       span.navbar-toggler-icon
     #nav-main.collapse.navbar-collapse.justify-content-end
       ul.navbar-nav
@@ -88,7 +88,7 @@ section#projects.bg-secondary
       each project in projects 
         .col.mb-4
           //- a.project-tile.text-white(href=project.link target='_blank' ref='noopener noreferrer')
-          .card.project-tile.text-center.bg-primary
+          .card.h-100.project-tile.text-center.bg-primary
             img.card-img-top(src=project.img)
             .card-body
               h5.card-title #{project.title}
