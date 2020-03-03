@@ -26,6 +26,10 @@ body {
   line-height: $rlh;
 }
 
+section {
+  scroll-margin-top: 72px;
+}
+
 
 a.project-tile {
 

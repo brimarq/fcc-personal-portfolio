@@ -71,14 +71,19 @@ section#welcome-section.vh-100.d-flex.flex-column
 
   .jumbotron.jumbotron-fluid.bg-dark.flex-grow-1.mb-0.bg-transparent
     .container.h-100.d-flex.flex-column
-     .heading.my-auto.mx-auto
+      .heading.my-auto.mx-auto
         h1 Brian Marquis
-        p.text-success web developer
+        h3.text-info web developer
+        //- pre: code.
+        //-   function (greatIdeas) {
+
+        //-   }
+      
 
 section#projects.bg-secondary
   .container
-    h2 My Projects
-    .row.row-cols-1.row-cols-sm-2.row-cols-md-3
+    //- h2.text-center Some of my projects:
+    .row.row-cols-1.row-cols-sm-2.row-cols-md-3.pt-5
       //- .col 
       //-   +project-card
       //- .col
@@ -86,7 +91,7 @@ section#projects.bg-secondary
       //- .col
       //-   +project-card
       each project in projects 
-        .col.mb-4
+        .col.mb-5
           //- a.project-tile.text-white(href=project.link target='_blank' ref='noopener noreferrer')
           .card.h-100.project-tile.text-center
             img.card-img-top(src=project.img)
@@ -95,10 +100,10 @@ section#projects.bg-secondary
               //- p.card-text Card text
               a.btn.btn-info(href=project.link target='_blank' ref='noopener noreferrer') View on CodePen
 
-section#contact
+section#contact.py-5
   .container
-    h2 Contact
-    p You can find me on:
+    //- h2 Contact
+    //- p You can find me on:
     ul.social-links.nav.justify-content-center
       li.nav-item.d-flex.flex-column.align-items-center
         a#profile-link.nav-link.text-primary(href='https://www.freecodecamp.org/brimarq' target='_blank' ref='noopener noreferrer')
@@ -119,7 +124,7 @@ section#contact
     
 
 
-footer(style="height:50px;")
+//- footer(style="height:50px;")
    
     
 //- button#custom_fcc_foldout_toggler.btn.text-nowrap !{svgPwrSymbol} TEST
