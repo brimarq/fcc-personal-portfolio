@@ -65,11 +65,7 @@ module.exports = {
         container: 'root',
         head: {
           links: [
-            // { rel: "stylesheet", href: "https://unpkg.com/normalize.css@8.0.1/normalize.css"},
-            // { rel: "stylesheet", href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", integrity: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh", crossorigin: "anonymous"},
-            // { rel: "stylesheet", href: "https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/superhero/bootstrap.min.css", integrity: "sha384-R/oa7KS0iDoHwdh4Gyl3/fU7pgvSCt7oyuQ79pkw+e+bMWD9dzJJa+Zqd+XJS0AD", crossorigin: "anonymous"},
             { rel: "stylesheet", href: "https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/darkly/bootstrap.min.css", integrity: "sha384-rCA2D+D9QXuP2TomtQwd+uP50EHjpafN+wruul0sXZzX/Da7Txn4tB9aLMZV4DZm", crossorigin: "anonymous"}
-            // { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Lato|Montserrat:800|Fira+Code&display=swap" }
           ],
           scripts: [
             { defer: true, src: 'https://use.fontawesome.com/releases/v5.3.1/js/all.js' }
