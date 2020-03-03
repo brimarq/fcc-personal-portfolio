@@ -33,21 +33,6 @@
     }
   ];
 
-mixin embeddedPen(title, slug) 
-  p(class="codepen" data-height="265" data-theme-id="light" data-preview='true' data-default-tab="result" data-user="brimarq" data-slug-hash=slug style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title=title)
-  //-   span See the Pen #[a(href="https://codepen.io/brimarq/pen/#{slug}") #{title}] by Brian Marquis (#[a(href="https://codepen.io/brimarq")] @brimarq) on #[a(href="https://codepen.io") CodePen]
-  script(async src="https://static.codepen.io/assets/embed/ei.js")
-
-mixin project-card 
-  a.project-tile(href='#' target='_blank' ref='noopener noreferrer')
-
-    .card
-      //- img.card-img-top(src="https://picsum.photos/782/563")
-      img.card-img-top(src="../assets/drum-machine.png")
-      .card-body
-        h5.card-title Card Title
-        p.card-text Card text
-
 nav#navbar.navbar.fixed-top.navbar-expand-sm.navbar-dark.bg-primary
   .container
     a.navbar-brand(href='#' ) Brian Marquis
@@ -61,49 +46,25 @@ nav#navbar.navbar.fixed-top.navbar-expand-sm.navbar-dark.bg-primary
         li.nav-item: a.nav-link(href='#contact' onclick=collapseNavMain) Contact
 
 section#welcome-section.vh-100.d-flex.flex-column
-  //- nav#navbar.navbar.sticky-top.justify-content-between.navbar-expand-sm.navbar-dark.bg-primary
-  //-   .navbar-brand 
-  //-     a.nav-link(href='#' ) Navbar brand
-  //-   ul.navbar-nav
-  //-     li.nav-item: a.nav-link(href='#welcome-section' ) About
-  //-     li.nav-item: a.nav-link(href='#projects' ) Work
-  //-     li.nav-item: a.nav-link(href='#contact' ) Contact
-
   .jumbotron.jumbotron-fluid.bg-dark.flex-grow-1.mb-0.bg-transparent
     .container.h-100.d-flex.flex-column
       .heading.my-auto.mx-auto
         h1 Brian Marquis
         h3.text-info web developer
-        //- pre: code.
-        //-   function (greatIdeas) {
-
-        //-   }
-      
 
 section#projects.bg-secondary
   .container
-    //- h2.text-center Some of my projects:
     .row.row-cols-1.row-cols-sm-2.row-cols-md-3.pt-5
-      //- .col 
-      //-   +project-card
-      //- .col
-      //-   +project-card
-      //- .col
-      //-   +project-card
       each project in projects 
         .col.mb-5
-          //- a.project-tile.text-white(href=project.link target='_blank' ref='noopener noreferrer')
           .card.h-100.project-tile.text-center
             img.card-img-top(src=project.img)
             .card-body
               h5.card-title #{project.title}
-              //- p.card-text Card text
               a.btn.btn-info(href=project.link target='_blank' ref='noopener noreferrer') View on CodePen
 
 section#contact.py-5
   .container
-    //- h2 Contact
-    //- p You can find me on:
     ul.social-links.nav.justify-content-center
       li.nav-item.d-flex.flex-column.align-items-center
         a#profile-link.nav-link.text-primary(href='https://www.freecodecamp.org/brimarq' target='_blank' ref='noopener noreferrer')
@@ -121,11 +82,5 @@ section#contact.py-5
         a.nav-link.text-primary(href='mailto:rbmarquis.dev@gmail.com?subject=CodePen%20Profile%20Page%20Pen%20Response')
           i.icon-social.fas.fa-at(data-fa-mask="fas fa-circle" data-fa-transform="shrink-6")
         | Email
-    
 
-
-//- footer(style="height:50px;")
-   
-    
-//- button#custom_fcc_foldout_toggler.btn.text-nowrap !{svgPwrSymbol} TEST
 button#custom_fcc_foldout_toggler.btn.btn-dark #[i.fas.fa-power-off] TEST

@@ -4,9 +4,6 @@
 
 $rlh: 1.618;
 $breakpoint: screen and (min-width: 1025px);
-$font-family-body: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
-$color-body-text: hsl(0, 0%, 20%);
-$color-new-fcc-toggler-btn-bg: hsl(227, 12%, 30%);
 
 /* Set default box-sizing */
 html { box-sizing: border-box; }
@@ -18,8 +15,6 @@ html {
 }
 
 body {
-  /* color: $color-body-text; */
-  /* font-family: $font-family-body; */
   position: relative;
   font-size: 1em;
   font-weight: 400;
@@ -28,11 +23,6 @@ body {
 
 section {
   scroll-margin-top: 72px;
-}
-
-
-a.project-tile {
-
 }
 
 .card {
@@ -44,30 +34,17 @@ a.project-tile {
 }
 
 .social-links a {
-  
-
   & .icon-social {
     font-size: 5em;
     border-radius: 50%;
     padding: 0.1rem;
-    /* background: radial-gradient(closest-side, white 86%, var(--white) 91%); */
     background: hsl(0, 0%, 100%);
-    /* border: 1px solid red; */
-    /* background-size: 90% 90%; */
     transition: transform 0.15s ease-in-out;
-    
   }
   &:hover .icon-social {
     background: hsl(0, 0%, 80%);
     transform: scale(1.1);
   }
-}
-
-
-
-p.icon-samples {
-  text-align: center;
-  font-size: 3em;
 }
 
 button#custom_fcc_foldout_toggler {
@@ -85,5 +62,3 @@ button#custom_fcc_foldout_toggler {
     display: inline-block;
   }
 }
-
-/* //www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
